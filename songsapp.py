@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output, State, Event
 import random
 
 ##############################################################
-        #DATA MANIPULATION (model)
+        #DATA MANIPULATION (MODEL)
 ##############################################################
 df= pd.read_csv("/Users/rra/Downloads/metacritic/top500_clean.csv")
 df['userscore'] = df['userscore'].astype(float)
@@ -31,7 +31,7 @@ df_bubble=  df2.groupby('genre')        .agg({'year':'size', 'metascore':'mean',
 df2_decade=df2.groupby(['genre', 'decade']).agg({'year':'size'}) .sort_values(['decade'], ascending=[False]).reset_index()
 
 ##############################################################
-        #DATA LAYOUT (view)
+        #DATA LAYOUT (VIEW)
 ##############################################################
 
 #gererate table
@@ -72,6 +72,9 @@ app.css.append_css({
 # Bootstrap Javascript.
 app.scripts.append_script({
     "external_url": "https://code.jquery.com/jquery-3.2.1.slim.min.js"
+})
+app.scripts.append_script({
+    "external_url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 })
 app.scripts.append_script({
     "external_url": "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -152,7 +155,7 @@ app.layout =  html.Div([
                                         )
                                      )
                                  ],
-                                 layout=go.Layout(title="Genre poularity")
+                                 layout=go.Layout(title="Genre popularity")
                              )
                               
                               
