@@ -11,7 +11,7 @@ dash-renderer==0.13.0
 dash-table-experiments==0.6.0
 decorator==4.3.0
 entrypoints==0.2.3
-Flask==1.0.2
+Flask==1.1.2
 Flask-Compress==1.4.0
 html5lib==1.0.1
 idna==2.7
