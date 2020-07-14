@@ -38,7 +38,7 @@ numpy==1.15.1
 pandas==0.23.4
 pandocfilters==1.4.2
 parso==0.5.0
-pexpect==4.6.0
+pexpect==4.8.0
 pickleshare==0.7.4
 plotly==3.1.1
 prometheus-client==0.3.1
