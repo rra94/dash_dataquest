@@ -44,7 +44,7 @@ plotly==3.1.1
 prometheus-client==0.3.1
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
-Pygments==2.2.0
+Pygments==2.7.2
 python-dateutil==2.8.1
 pytz==2018.5
 pyzmq==17.1.2
